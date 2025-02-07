@@ -1,0 +1,98 @@
+<head>
+<title>TruthF1nd3r</title>
+<link rel="icon" type="image/x-icon" href="truth-ico.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+
+</head>
+<html>
+    <body>
+        
+        <div class="page"> 
+        <a href="https://www.instagram.com/truegiftcorp" target="_blank"><img src="logo-title-white.png" width="100px"></img></a>
+                        <br>
+                     <!---  <img src="truth-title.png"></img> -->
+
+                        <div class="moteur">
+                        <p id="Display0">‎</p>
+                        </div>
+
+                        <div class="moteur">
+                        <p id="Display1">‎</p>
+                        </div>
+
+                        <div class="moteur">
+                        <p id="Display2">‎</p>
+                        </div>
+                    
+                        <div class="moteur">
+                            <p id="Display3">‎</p>
+                        </div>
+
+                        <script>
+                            function pickRandomWord0() {
+                                const words = ["Lifdev you're the one!", "Magic happens", "Truth is here", "You are evolving","Think about the future", "Live in the present", "You gon laugh"];
+                                const randomIndex = Math.floor(Math.random() * words.length);
+                                document.getElementById("Display0").textContent = words[randomIndex];
+                            }
+
+                            function pickRandomWord1() {
+                                const words = ["You already won", "Winner","Perfect", "Welcome to the reality"];
+                                const randomIndex = Math.floor(Math.random() * words.length);
+                                document.getElementById("Display1").textContent = words[randomIndex];
+                            }
+
+                            function pickRandomWord2() {
+                                const words = ["□□□□□□□□□□", "■□□□□□□□□□","■■□□□□□□□□", "■■■□□□□□□□", "■■■■□□□□□□□","■■■■□□□□□","■■■■□□□□□□","■■■■□□□□□□","■■■■■□□□□□","■■■■■■□□□□","■■■■■■■□□□","■■■■■■■■□□","■■■■■■■■■□","■■■■■■■■■■"];
+                                const randomIndex = Math.floor(Math.random() * words.length);
+                                document.getElementById("Display2").textContent = words[randomIndex];
+                            }
+                            function pickRandomWord3() {
+                                const words = ["🔴","🟠","🟡","🟢","🔵","🟣","🟤","⚪", "⚫"];
+                                const randomIndex = Math.floor(Math.random() * words.length);
+                                document.getElementById("Display3").textContent = words[randomIndex];
+                            }
+                        </script>
+
+                        <button onclick="pickRandomWord0(), pickRandomWord1(), pickRandomWord2(), pickRandomWord3()">Click to find</button>
+
+        </div> 
+
+    </body>
+</html>
+
+<style>
+body{
+background-color: #6087c4;
+}
+.page{
+width: 555px;
+text-align: center;
+color: white;
+margin: 20px auto 100px;
+}
+.moteur{
+font-size: 17px;
+background-color: #999;
+margin: 10px auto 10px;
+outline: solid white 1px;
+color: white;
+box-shadow: 0px 0px 8px 1px #F0F8FF;
+}
+
+button{
+width: 100px;
+height: 30px;
+margin: 50px auto 10px;
+background-color: white;
+color: black;
+}
+    
+    @media screen and (max-width: 700px) {
+.page {
+    max-width: 90%;
+}
+.moteur{
+    width: auto;
+}
+}
+</style>
